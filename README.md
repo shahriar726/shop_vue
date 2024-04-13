@@ -1,30 +1,18 @@
 # shop_vue
-برنامه فروشگاه انلاین به همراه Laravel, Vue.js, Tailwind.css and Inertia.js
+1.E-commerce application built with Laravel, Vue.js, Tailwind.css and Inertia.js with Stripe Payment
+2.installation
+3.Make sure you have environment setup properly. You will need MySQL, PHP8.1, Node.js and composer.
 
-مراحل نصب
-اطمینان حاصل کنید که محیط خود را به درستی راه‌اندازی کرده‌اید. شما باید MySQL، PHP8.1، Node.js و composer را داشته باشید.
-
-1.نصب لاراول+api
-
-2.دانلود پروژه یا کلون کردن پروژه
-
-3. فایل .env.example را کپی کرده و در فایل .env ورودی های پایگاه داده را پیکربندی کنید.
-
-5. از طریق ترمینال به دایرکتوری اصلی پروژه هدایت کنید
-
-7. نصب composer
-
-9. با اجرای دستور php artisan key:generate کلید رمزنگاری را تنظیم کنید.
-
-11. اجرا کردن مایگریشن‌ها با اجرای دستور php artisan migrate --seed
-
-13. اجرای نوار داده برای آزمایش php artisan db:seed AdminSeeder و دیگر فایل‌های کاشی داده را می‌توانید زیر پوشه database/seeders پیدا کنید
-
-15. با اجرای دستور php artisan serve سرور محلی را شروع کنید.
-
-10.ترمینال جدید باز کرده و به ریشه پروژه هدایت شده npm install اجرا کنید.
-
-11 .اجرا npm run dev برای شروع سرور vite برای رابط کاربری Laravel
-
-برای کلید Api از استریپ لطفاً به فایل .env بروید و کلید api خود را برای این متغیر REPLACE_KEY = "اینجا کلید API خود را جایگزین کنید"
+4.Install Laravel Website + API
+5.Download the project (or clone using GIT)
+6.Copy .env.example into .env and configure database credentials
+7.Navigate to the project's root directory using terminal
+8.Run composer install
+9.Set the encryption key by executing php artisan key:generate
+10.Run migrations php artisan migrate --seed
+11.Run data seeder to test  php artisan db:seed AdminSeeder and and other db seeder files you can find under database/seeders
+12.Start local server by executing php artisan serve
+13.Open new terminal and navigate to the project root directory Run npm install
+14.Run npm run dev to start vite server for Laravel frontend
+For Stripe Api key, please go to .env file and replace with your api key for this variable STRIPE_KEY="REPLACE WITH YOUR STRIP API KEY HERE"
 
